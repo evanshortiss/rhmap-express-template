@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "0.10"
+  - "4.4.2"
+sudo: false
+before_install:
+  - npm install -g npm@2.13.5
+  - npm install -g grunt@0.4.5
+  - npm install -g grunt-cli
+install: npm install
