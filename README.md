@@ -41,6 +41,7 @@ curl http://127.0.0.1:8001/users/0
 
  * node.js v0.10.30
  * npm
+ * redis
 
 ## Install Dependencies
 Before trying to run this application you'll need to install the dependencies.
