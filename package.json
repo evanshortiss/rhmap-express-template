@@ -9,7 +9,7 @@
     "analysis": "plato -d analysis $(find ./lib -name \"*.js\" -not -name \"*.test.js\")",
     "test": "npm run-script jshint && npm run-script coverage && npm run-script check-coverage",
     "coverage": "env NODE_PATH=. NODE_ENV=test istanbul cover -x *.test.js _mocha $(find ./lib -name \"*.test.js\")",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "istanbul check-coverage --statements 95 --branches 95 --functions 95 --lines 95",
     "unit": "env NODE_PATH=. NODE_ENV=test _mocha $(find ./lib -name \"*.test.js\")"
   },
   "repository": {
