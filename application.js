@@ -25,6 +25,10 @@ require('lib/routes/users')(app);
 require('lib/routes/hello')(app);
 require('lib/routes/error-example')(app);
 
+app.get('/ci-test', (req, res) => {
+  res.end('ci test success!')
+})
+
 // Expose our counters
 app.use('/stats', counters.router);
 
