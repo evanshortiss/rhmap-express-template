@@ -9,7 +9,7 @@ var express = require('express')
 
 log.info('starting application');
 
-// app.use(require('cors')())
+app.use(require('cors')())
 
 // Add our request counting middleware before all other routes
 app.use(counters.middleware);
@@ -28,7 +28,7 @@ require('lib/routes/hello')(app);
 require('lib/routes/error-example')(app);
 
 app.get('/ci-test', (req, res) => {
-  res.end('ci test success!')
+  res.end('ci test!')
 })
 
 // Expose our counters
