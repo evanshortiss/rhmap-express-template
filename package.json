@@ -32,6 +32,7 @@
   "homepage": "https://github.com/evanshortiss/rhmap-express-template",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "cors": "~2.8.4",
     "express": "^4.13.4",
     "fh-bunyan": "^0.1.2",
     "fh-mbaas-api": "^5.5.6",

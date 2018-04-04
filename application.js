@@ -9,6 +9,8 @@ var express = require('express')
 
 log.info('starting application');
 
+// app.use(require('cors')())
+
 // Add our request counting middleware before all other routes
 app.use(counters.middleware);
 
