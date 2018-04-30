@@ -6,4 +6,4 @@ deployment:
      - git push $FH_GIT_URL $CIRCLE_SHA1:refs/heads/dev
      - fhc target $FH_DOMAIN
      - fhc login $FH_USER $FH_PASS
-     - fhc app stage --app=$FH_CLOUD_APP_ID --env=$FH_CLOUD_ENV --runtime=node010 --clean=true --gitRef.type=branch --gitRef.hash=HEAD --gitRef.value=dev
+     - fhc app stage --app=$FH_CLOUD_APP_ID --env=$FH_CLOUD_ENV --clean=true --gitRef.type=branch --gitRef.hash=HEAD --gitRef.value=master
